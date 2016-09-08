@@ -9,7 +9,7 @@ public class Total {
 		return Arrays.asList(list).stream().reduce(0, (a,b) -> a+b);
 	}
 	public int countEven(Integer[] list){
-		return Arrays.asList(list).stream().reduce(0, (a,b) ->{if (b%2 ==0) { return a+1;} else{return a;}});
+		return Arrays.asList(list).stream().reduce(0, (a,b) ->a= (b+1)%2);
 	}
 
 }
